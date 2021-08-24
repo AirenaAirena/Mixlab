@@ -1,0 +1,348 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1096px) {
+	.works__items {
+		justify-content: center;
+	}
+	.work__item {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	a.logo {
+		margin-right: 30px;
+	}
+	.slick-list {
+		overflow: hidden;
+	}
+	.sleider__photo-items::before {
+		left: 78%;
+	}
+	.inwild__items {
+		justify-content: space-evenly;
+	}
+	.footer__item {
+		flex: 1 0 50%;
+		margin-bottom: 20px;
+		padding-left: 20px;
+	}
+	.footer__items {
+		padding-left: 60px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1008px) {
+	.header-menu__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 5;
+	}
+
+	.header-menu__burger::before,
+	.header-menu__burger::after {
+		content: "";
+		background-color: #f7a500;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header-menu__burger::before {
+		top: 0;
+	}
+	.header-menu__burger::after {
+		bottom: 0;
+	}
+	.header-menu__burger span {
+		position: absolute;
+		background-color: #f7a500;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header-menu__burger.on::before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header-menu__burger.on::after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.header-menu__burger.on span {
+		transform: scale(0);
+	}
+	.menu {
+		display: none;
+		top: 93px;
+		left: 0;
+		width: 100%;
+		height: auto;
+		background-color: #f7a500;
+		padding: 20px 10px 20px 10px;
+		position: absolute;
+		z-index: 5;
+	}
+	.menu .menu__list {
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+	.menu ul .menu__item {
+		line-height: 40px;
+		margin: 15px 0;
+		text-align: center;
+		transition: all 0.5s ease;
+	}
+	.menu ul .menu__item:hover {
+		background-color: darkseagreen;
+	}
+	.menu ul .menu__link:hover {
+		color: darkorange;
+	}
+	.menu .menu__link {
+		font-size: 20px;
+		transition: all 0.5s ease;
+	}
+	.slick-slide img {
+		float: none;
+		margin: 0 auto;
+	}
+	.sleider__flex {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		margin-left: 0;
+	}
+	.sleider__flex .blockquote {
+		flex: 0 0 auto;
+		margin-left: 0;
+	}
+	.sleider__flex .autor {
+		padding-left: 30px;
+	}
+	.sleider__flex .autor::before {
+		left: 0;
+	}
+	.slick-initialized .slick-slide {
+		display: flex;
+	}
+	.cleider__photo-item {
+		min-height: 500px;
+	}
+}
+
+@media only screen and (max-width: 844px) {
+	.vet__inner-content h2 {
+		margin-bottom: 18px;
+		font-size: 34px;
+		line-height: 44px;
+	}
+}
+
+@media only screen and (max-width: 764px) {
+	.find__dog-title img {
+		margin: 0 auto;
+		left: 0;
+	}
+	.vet__inner {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.sleider__photo-items::before {
+		left: 71%;
+	}
+	.slick-initialized .slick-slide {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.sleider__flex {
+		margin-top: 20px;
+	}
+	.slick-slide img {
+		float: none;
+	}
+	.sleider__flex .blockquote {
+		margin-left: 0;
+	}
+	.inwild__column {
+		flex: 1 1 auto;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.partners {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.blockquote {
+		flex: 1 0 300px;
+	}
+	.sleider__flex {
+		display: flex;
+		flex-direction: column;
+	}
+	.sleider__photo-items {
+		display: flex;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 588px) {
+	a.logo {
+		margin: 10px;
+	}
+	.wrap__btn .btn {
+		padding: 15px 14px;
+	}
+	.find__dog-content {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.find__dog-item {
+		padding-left: 0;
+	}
+	.find__dog-title h2,
+	.works__inner h2,
+	.vet__inner-content h2 {
+		font-size: 34px;
+		line-height: 44px;
+	}
+	.vet__inner-content .btn {
+		display: block;
+		width: 166px;
+		margin: 0 auto;
+	}
+	.sleider__photo-items::before {
+		display: none;
+	}
+	.cleider__photo-item {
+		margin: 0 20px;
+		padding: 28px 28px;
+	}
+}
+@media only screen and (max-width: 568px) {
+	.partners__img {
+		justify-content: center;
+	}
+	.partners__img-item {
+		margin-top: 15px;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 536px) {
+	.header__img img {
+		left: 0;
+	}
+	.header__wrapper {
+		padding: 0 30px;
+	}
+}
+@media only screen and (max-width: 492px) {
+	.header__top {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.wrap__btn > button + button {
+		margin-left: 60px;
+	}
+	.wrap__btn {
+		margin-top: 20px;
+	}
+	.header__content {
+		padding-top: 60px;
+	}
+	.header__content h1 {
+		font-size: 47px;
+		line-height: 55px;
+	}
+	.sleider__flex {
+		margin-left: 0;
+	}
+	.cleider__photo-item {
+		display: flex;
+		flex-direction: column;
+	}
+	.cleider__photo-text {
+		flex: 1;
+	}
+	.blockquote {
+		flex: 1 0 400px;
+	}
+	.sleider__flex {
+		display: flex;
+		flex-direction: column;
+	}
+	.sleider__photo-items {
+		display: flex;
+	}
+	.slick-initialized .slick-slide {
+		align-items: inherit;
+	}
+	.cleider__photo-item {
+		min-height: 675px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 375px) {
+	.header__img {
+		max-width: 320px;
+		height: auto;
+	}
+	.header__img img {
+		width: 100%;
+	}
+	.wrap__btn > button + button {
+		margin-left: 23px;
+	}
+	.cleider__photo-item {
+		padding: 18px 18px;
+	}
+	.footer__items,
+	.footer__copy {
+		padding-left: 30px;
+	}
+	.footer__copy {
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.footer__items,
+	.footer__copy {
+		padding-left: 0px;
+	}
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
